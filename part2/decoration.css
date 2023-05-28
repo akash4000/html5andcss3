@@ -1,0 +1,9 @@
+h1 {
+  text-decoration: wavy;
+  color: brown;
+}
+p {
+  column-count: 2;
+  column-gap: 1rem;
+  column-rule: 4px solid cadetblue;
+}

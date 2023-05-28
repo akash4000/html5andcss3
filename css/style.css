@@ -1,0 +1,61 @@
+body {
+  margin: 10px;
+}
+
+p {
+  color: orchid;
+}
+#products ~ p {
+  color: orange;
+}
+
+article :firs-of-child {
+  font-size: 140%;
+  font-style: italic;
+}
+
+ul li:nth-child(odd) {
+  color: pink;
+}
+
+p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+P::first-line {
+  font-weight: bold;
+}
+
+::selection {
+  background-color: yellowgreen;
+}
+
+P::before {
+  content: ".....";
+  display: block;
+}
+h1 {
+  color: aqua;
+  text-shadow: 3px 5px 5px black;
+}
+
+.highlight {
+  color: blueviolet;
+}
+P {
+  color: coral;
+  border: 1px solid black;
+}
+strong {
+  color: initial;
+  border: inherit;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(blue, pink, white);
+  border: 5px solid brown;
+  box-shadow: 10px 10px 20px violet;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      .container {
+        display: grid;
+        /* grid-template-rows: 100px 100px 100px;
+        grid-template-columns: 200px 200px; */
+        grid-template: 100px auto 100px / 30fr 70fr; /* short hand  */
+        border: 3px solid yellowgreen;
+        gap: 10px;
+        height: 100vh;
+        grid-template-areas:
+          "header header"
+          "sidebar main"
+          ".       footer";
+      }
+
+      .box {
+        background-color: crimson;
+      }
+
+      .box-first {
+        grid-area: header;
+      }
+
+      .box-four {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-first">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box box-four">D</div>
+    </div>
+  </body>
+</html>

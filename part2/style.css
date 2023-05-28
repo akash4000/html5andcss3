@@ -1,0 +1,111 @@
+body {
+  margin: 10px;
+}
+
+.box {
+  width: 50vw;
+  height: 100vh;
+  background-color: orange;
+  border-top: 3px solid olive;
+}
+
+.boxes {
+  border: 3px solid skyblue;
+  position: relative;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+.box-one {
+  background-color: blue;
+}
+
+.box-two {
+  background-color: cyan;
+  position: fixed;
+  top: 0;
+}
+
+.box-three {
+  background-color: crimson;
+}
+
+.tweet {
+  border: 3px solid lightblue;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: beige;
+  float: left;
+  margin: 1rem;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 200px 200px;
+  border: 3px solid yellowgreen;
+}
+
+.containerr {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxx {
+  background-color: darkgray;
+  padding: 1rem;
+}
+
+.boxx:nth-of-type(2) {
+  background: plum;
+}
+
+@media screen and (min-width: 600px) {
+  .containerr {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .containerr {
+    flex-direction: row;
+  }
+  .boxx {
+    background: wheat;
+  }
+}
+
+@media print {
+  body {
+    font-size: 12pt;
+  }
+  .boxx {
+    padding: 0.5;
+  }
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p,
+a {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem0;
+  color: brown;
+}

@@ -1,0 +1,12 @@
+body {
+  background-image: url(pexels-felix-mittermeier-956981.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300vh;
+}
+h1 {
+  color: goldenrod;
+  text-decoration: wavy;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana,  sans-serif;
+}
